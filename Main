@@ -1,0 +1,24 @@
+package Merge;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author gkhnya
+ */
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String dizi;
+        do {
+            System.out.print("Bir karakter dizisi giriniz : ");
+            dizi = sc.nextLine();
+            Merge a = new Merge(dizi);
+            a.sort(0, dizi.length() - 1);
+            a.yazdir();
+        } while (true);
+
+    }
+}
